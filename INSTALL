@@ -1,0 +1,30 @@
+**************************************************************
+  Author: Craig Lage, UC Davis
+  Date: Feb 18, 2015
+
+  Standalone cpp Poisson solver
+**************************************************************
+
+
+Instructions for building the "Poisson" code.
+Craig Lage - UC Davis - 18-Feb-15
+
+Dependencies:
+
+There are two dependencies that need to be installed before you can compile the Poisson code:
+
+(1) C++ Boost libraries.  There are several options for installing these:
+
+     (A) Ubuntu: Install the boost libraries using: sudo apt-get install libboost-all-dev
+     (B) Mac OSX: Assuming you are using homebrew, install using: brew install boost
+     (C) Build them from source.  They can be downloaded from: www.boost.org
+
+(2) HDF5 libraries.  There are several options for installing these:
+
+     (A) Ubuntu: Install the hdf5 libraries using: sudo apt-get install hdf5-tools
+     (B) Mac OSX: Assuming you are using homebrew, install using: brew install hdf5
+     (C) Build them from source.  They can be downloaded from: www.hdfgroup.org/HDF5/release/obtain5.html
+
+(3) After installing the above two dependencies, edit the src/Makefile lines BOOST_DIR and HDF5_DIR to point to their locations.
+
+(4) In the src directory, type "make".  This should build the Poisson code, and create an executable called src/Poisson. Depending on where you ahve installed the above libraries, you may need to edit your LD_LIBRARY_PATH environment variable so the system can find the appropriate files for linking.
