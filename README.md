@@ -24,5 +24,5 @@ python Poisson_Plots.py <configuration file>
 
 The plotting routine should run OK with the four example .cfg files, but if you do something else, you will probably need to customize the Poisson_Plots.py code.
 
-Hopefully you find this useful.  Comments and questions are encouraged and should be addressed to:
+Hopefully you find this useful.  Comments and questions are encouraged and should be addressed to: cslage@ucdavis.edu
 
